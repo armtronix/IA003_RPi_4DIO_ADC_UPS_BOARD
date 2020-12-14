@@ -1,0 +1,1554 @@
+[
+    {
+        "id": "c0928ee6.de82a",
+        "type": "tab",
+        "label": "GPIO_TEST",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "339180d2.0bf8d",
+        "type": "tab",
+        "label": "LOGIC GATES",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "a7e826aa.2eb9f8",
+        "type": "tab",
+        "label": "Battery Monitoring",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "697027fa.aa26f8",
+        "type": "tab",
+        "label": "ADC Reading",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "3cf34c5.fe00fb4",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Energy Monitoring",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "feed3433.2e4838",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a35e5679.67fea8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Button Panel",
+        "icon": "dashboard"
+    },
+    {
+        "id": "b5d4f6c6.b19988",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Lane Control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "18f84703.5ed429",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Test",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b4b53a59.4c5f58",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IA003 RPi 4DIO UPS Board",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "76a48de2.b98ac4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Battery Voltage",
+        "tab": "b4b53a59.4c5f58",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "38328156.61afde",
+        "type": "ui_group",
+        "z": "",
+        "name": "ADC Channel 1",
+        "tab": "b4b53a59.4c5f58",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e440db3a.2360e8",
+        "type": "ui_group",
+        "z": "",
+        "name": "ADC Channel 2",
+        "tab": "b4b53a59.4c5f58",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "25d4cfb2.0cd7a",
+        "type": "ui_group",
+        "z": "",
+        "name": "ADC Channel 3",
+        "tab": "b4b53a59.4c5f58",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8ea36253.7e02b",
+        "type": "rpi-gpio in",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "31",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "x": 284,
+        "y": 140,
+        "wires": [
+            [
+                "8bcc78c.28a1988",
+                "a2de158d.5e6c98"
+            ]
+        ]
+    },
+    {
+        "id": "ff75ad09.20cc2",
+        "type": "rpi-gpio in",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "33",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "x": 284,
+        "y": 252,
+        "wires": [
+            [
+                "4881ed27.5f0424",
+                "559509ad.cd1278"
+            ]
+        ]
+    },
+    {
+        "id": "469cd26f.4daeec",
+        "type": "rpi-gpio in",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "35",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "x": 284,
+        "y": 364,
+        "wires": [
+            [
+                "106f73f5.518d4c",
+                "1d52d481.d9156b"
+            ]
+        ]
+    },
+    {
+        "id": "8bb8dc65.1846e",
+        "type": "rpi-gpio in",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "37",
+        "intype": "up",
+        "debounce": "25",
+        "read": false,
+        "x": 284,
+        "y": 476,
+        "wires": [
+            [
+                "790c5664.1e51f8",
+                "b22c49d5.d3ca98"
+            ]
+        ]
+    },
+    {
+        "id": "8bcc78c.28a1988",
+        "type": "rpi-gpio out",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "7",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 526,
+        "y": 112,
+        "wires": []
+    },
+    {
+        "id": "559509ad.cd1278",
+        "type": "rpi-gpio out",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "11",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 536,
+        "y": 224,
+        "wires": []
+    },
+    {
+        "id": "1d52d481.d9156b",
+        "type": "rpi-gpio out",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "13",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 536,
+        "y": 336,
+        "wires": []
+    },
+    {
+        "id": "790c5664.1e51f8",
+        "type": "rpi-gpio out",
+        "z": "c0928ee6.de82a",
+        "name": "",
+        "pin": "15",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 536,
+        "y": 448,
+        "wires": []
+    },
+    {
+        "id": "a2de158d.5e6c98",
+        "type": "debug",
+        "z": "c0928ee6.de82a",
+        "name": "GPIO 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 536,
+        "y": 168,
+        "wires": []
+    },
+    {
+        "id": "4881ed27.5f0424",
+        "type": "debug",
+        "z": "c0928ee6.de82a",
+        "name": "GPIO 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 536,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "106f73f5.518d4c",
+        "type": "debug",
+        "z": "c0928ee6.de82a",
+        "name": "GPIO 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 536,
+        "y": 392,
+        "wires": []
+    },
+    {
+        "id": "b22c49d5.d3ca98",
+        "type": "debug",
+        "z": "c0928ee6.de82a",
+        "name": "GPIO 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 536,
+        "y": 504,
+        "wires": []
+    },
+    {
+        "id": "b937ec37.2fd64",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "33",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 280,
+        "wires": [
+            [
+                "73ff1aa8.ca7c74"
+            ]
+        ]
+    },
+    {
+        "id": "c130b194.94f2f",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "35",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 392,
+        "wires": [
+            [
+                "d237288e.5fc3f8"
+            ]
+        ]
+    },
+    {
+        "id": "e6d0853d.c8f8c8",
+        "type": "rpi-gpio out",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "7",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 610,
+        "y": 392,
+        "wires": []
+    },
+    {
+        "id": "73ff1aa8.ca7c74",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 280,
+        "wires": [
+            [
+                "a87e7a13.c3b348"
+            ]
+        ]
+    },
+    {
+        "id": "d237288e.5fc3f8",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 392,
+        "wires": [
+            [
+                "a87e7a13.c3b348"
+            ]
+        ]
+    },
+    {
+        "id": "a87e7a13.c3b348",
+        "type": "BooleanLogic",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "operation": "OR",
+        "inputCount": 2,
+        "topic": "result",
+        "x": 442,
+        "y": 336,
+        "wires": [
+            [
+                "d683e159.be99b",
+                "e6d0853d.c8f8c8",
+                "4d044e68.a6d07"
+            ]
+        ]
+    },
+    {
+        "id": "d683e159.be99b",
+        "type": "BDebug",
+        "z": "339180d2.0bf8d",
+        "name": "OR VALUE",
+        "x": 630,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4d044e68.a6d07",
+        "type": "debug",
+        "z": "339180d2.0bf8d",
+        "name": "OR GATE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 620,
+        "y": 336,
+        "wires": []
+    },
+    {
+        "id": "864a743c.14e328",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "35",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 504,
+        "wires": [
+            [
+                "66b6db5c.8a5224"
+            ]
+        ]
+    },
+    {
+        "id": "66b6db5c.8a5224",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 504,
+        "wires": [
+            [
+                "a7a19d91.c4ab8",
+                "9a157d3.b17048"
+            ]
+        ]
+    },
+    {
+        "id": "9a157d3.b17048",
+        "type": "rpi-gpio out",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "7",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 498,
+        "y": 532,
+        "wires": []
+    },
+    {
+        "id": "a7a19d91.c4ab8",
+        "type": "debug",
+        "z": "339180d2.0bf8d",
+        "name": "OR GATE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 508,
+        "y": 476,
+        "wires": []
+    },
+    {
+        "id": "ae5f1a01.10afb8",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "31",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 616,
+        "wires": [
+            [
+                "9115e296.10ac2"
+            ]
+        ]
+    },
+    {
+        "id": "567d90bf.afaa6",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "37",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 728,
+        "wires": [
+            [
+                "75be08fd.64a558"
+            ]
+        ]
+    },
+    {
+        "id": "8db8feeb.a657a",
+        "type": "rpi-gpio out",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "11",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 732,
+        "y": 728,
+        "wires": []
+    },
+    {
+        "id": "9115e296.10ac2",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 616,
+        "wires": [
+            [
+                "2b38dc96.85f424"
+            ]
+        ]
+    },
+    {
+        "id": "75be08fd.64a558",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 728,
+        "wires": [
+            [
+                "2b38dc96.85f424"
+            ]
+        ]
+    },
+    {
+        "id": "2b38dc96.85f424",
+        "type": "BooleanLogic",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "operation": "AND",
+        "inputCount": 2,
+        "topic": "result",
+        "x": 452,
+        "y": 672,
+        "wires": [
+            [
+                "43484d41.317d34"
+            ]
+        ]
+    },
+    {
+        "id": "87cd4fb3.0f9bd",
+        "type": "BDebug",
+        "z": "339180d2.0bf8d",
+        "name": "NAND VALUE",
+        "x": 752,
+        "y": 616,
+        "wires": []
+    },
+    {
+        "id": "64bf1191.30eac",
+        "type": "debug",
+        "z": "339180d2.0bf8d",
+        "name": "NAND GATE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 742,
+        "y": 672,
+        "wires": []
+    },
+    {
+        "id": "43484d41.317d34",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 582,
+        "y": 672,
+        "wires": [
+            [
+                "64bf1191.30eac",
+                "87cd4fb3.0f9bd",
+                "8db8feeb.a657a"
+            ]
+        ]
+    },
+    {
+        "id": "bd03e59.4312818",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "31",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 56,
+        "wires": [
+            [
+                "6bb9bbec.e2b394"
+            ]
+        ]
+    },
+    {
+        "id": "a141686.0e6f898",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "35",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 168,
+        "wires": [
+            [
+                "8a84dced.e5137"
+            ]
+        ]
+    },
+    {
+        "id": "978ad52d.066f48",
+        "type": "rpi-gpio out",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "15",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 620,
+        "y": 168,
+        "wires": []
+    },
+    {
+        "id": "6bb9bbec.e2b394",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 56,
+        "wires": [
+            [
+                "10d759e4.c3c556"
+            ]
+        ]
+    },
+    {
+        "id": "8a84dced.e5137",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 168,
+        "wires": [
+            [
+                "10d759e4.c3c556"
+            ]
+        ]
+    },
+    {
+        "id": "10d759e4.c3c556",
+        "type": "BooleanLogic",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "operation": "AND",
+        "inputCount": 2,
+        "topic": "result",
+        "x": 452,
+        "y": 112,
+        "wires": [
+            [
+                "408169b6.64c1b8",
+                "978ad52d.066f48",
+                "b21cc1c4.e3969"
+            ]
+        ]
+    },
+    {
+        "id": "408169b6.64c1b8",
+        "type": "BDebug",
+        "z": "339180d2.0bf8d",
+        "name": "AND VALUE",
+        "x": 630,
+        "y": 56,
+        "wires": []
+    },
+    {
+        "id": "b21cc1c4.e3969",
+        "type": "debug",
+        "z": "339180d2.0bf8d",
+        "name": "AND GATE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 630,
+        "y": 112,
+        "wires": []
+    },
+    {
+        "id": "1311f5c4.0537aa",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "33",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 840,
+        "wires": [
+            [
+                "af0fabfe.17ef68"
+            ]
+        ]
+    },
+    {
+        "id": "bc7e063b.2a4768",
+        "type": "rpi-gpio in",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "37",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 144,
+        "y": 952,
+        "wires": [
+            [
+                "ee98e358.1c8da"
+            ]
+        ]
+    },
+    {
+        "id": "ed92fa86.0d2ac8",
+        "type": "rpi-gpio out",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "pin": "13",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 732,
+        "y": 952,
+        "wires": []
+    },
+    {
+        "id": "af0fabfe.17ef68",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 840,
+        "wires": [
+            [
+                "804d0d84.347e9"
+            ]
+        ]
+    },
+    {
+        "id": "ee98e358.1c8da",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 302,
+        "y": 952,
+        "wires": [
+            [
+                "804d0d84.347e9"
+            ]
+        ]
+    },
+    {
+        "id": "804d0d84.347e9",
+        "type": "BooleanLogic",
+        "z": "339180d2.0bf8d",
+        "name": "",
+        "operation": "OR",
+        "inputCount": 2,
+        "topic": "result",
+        "x": 442,
+        "y": 896,
+        "wires": [
+            [
+                "722b5abb.23e214"
+            ]
+        ]
+    },
+    {
+        "id": "1fd1aae2.e91535",
+        "type": "BDebug",
+        "z": "339180d2.0bf8d",
+        "name": "NOR VALUE",
+        "x": 742,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "30b1e15f.2961fe",
+        "type": "debug",
+        "z": "339180d2.0bf8d",
+        "name": "NOR GATE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 742,
+        "y": 896,
+        "wires": []
+    },
+    {
+        "id": "722b5abb.23e214",
+        "type": "Invert",
+        "z": "339180d2.0bf8d",
+        "name": "Invert",
+        "x": 582,
+        "y": 896,
+        "wires": [
+            [
+                "30b1e15f.2961fe",
+                "1fd1aae2.e91535",
+                "ed92fa86.0d2ac8"
+            ]
+        ]
+    },
+    {
+        "id": "b49413ec.687ea",
+        "type": "ads1x15-raspi",
+        "z": "a7e826aa.2eb9f8",
+        "property": "payload",
+        "name": "ADC",
+        "chip": "IC_ADS1115",
+        "i2c_address": "ADDRESS_0x48",
+        "channel": "CHANNEL_0",
+        "samplesPerSecond0": "SPS_920",
+        "samplesPerSecond1": "SPS_128",
+        "progGainAmp": "PGA_4_096V",
+        "x": 386,
+        "y": 112,
+        "wires": [
+            [
+                "af63faaa.5b6118"
+            ]
+        ]
+    },
+    {
+        "id": "9cea6eb5.0d9eb",
+        "type": "function",
+        "z": "a7e826aa.2eb9f8",
+        "name": "Battery Value",
+        "func": "var BatteryDividerVoltage = msg.payload\nvar VoltageCalculation = (12.4/10.0)*BatteryDividerVoltage;\nvar BatteryVoltage = VoltageCalculation.toFixed(3)\nmsg.payload = BatteryVoltage;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 388,
+        "y": 224,
+        "wires": [
+            [
+                "909fb972.3300a8",
+                "528a44be.aca07c",
+                "396f2d32.6f07c2"
+            ]
+        ]
+    },
+    {
+        "id": "909fb972.3300a8",
+        "type": "debug",
+        "z": "a7e826aa.2eb9f8",
+        "name": "Battery Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 612,
+        "y": 196,
+        "wires": []
+    },
+    {
+        "id": "528a44be.aca07c",
+        "type": "function",
+        "z": "a7e826aa.2eb9f8",
+        "name": "Battery Monitor",
+        "func": "var BatteryVoltage = msg.payload\nif(BatteryVoltage <= 3.0)\n {\n     msg.payload = 1;\n     return msg;\n }\nelse\n {\n     return null;\n }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 612,
+        "y": 308,
+        "wires": [
+            [
+                "17da587.cef4fa8",
+                "60366068.231ae"
+            ]
+        ]
+    },
+    {
+        "id": "17da587.cef4fa8",
+        "type": "exec",
+        "z": "a7e826aa.2eb9f8",
+        "command": "sudo shutdown now",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "shutdown command",
+        "x": 828,
+        "y": 280,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "60366068.231ae",
+        "type": "debug",
+        "z": "a7e826aa.2eb9f8",
+        "name": "shutdown True/False",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 828,
+        "y": 336,
+        "wires": []
+    },
+    {
+        "id": "a428ff8b.21eca",
+        "type": "inject",
+        "z": "697027fa.aa26f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 126,
+        "y": 168,
+        "wires": [
+            [
+                "87a33287.f3fb6",
+                "2373d768.5b7be8",
+                "401e3c6.6c36dc4",
+                "1445f667.5b5cfa"
+            ]
+        ]
+    },
+    {
+        "id": "87a33287.f3fb6",
+        "type": "ads1x15-raspi",
+        "z": "697027fa.aa26f8",
+        "property": "payload",
+        "name": "Channel 1",
+        "chip": "IC_ADS1115",
+        "i2c_address": "ADDRESS_0x48",
+        "channel": "CHANNEL_1",
+        "progGainAmp": "PGA_4_096V",
+        "x": 350,
+        "y": 196,
+        "wires": [
+            [
+                "5897d79d.ddfe78"
+            ]
+        ]
+    },
+    {
+        "id": "8553854e.2b5fb8",
+        "type": "function",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Converter",
+        "func": "var ADC_Value = msg.payload\nvar ADC_Converted = (ADC_Value*10.0)+0.069999999999;\nvar ADC_Reading = ADC_Converted.toFixed(3);\nmsg.payload = ADC_Reading;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 696,
+        "y": 196,
+        "wires": [
+            [
+                "1379b423.fe8bac",
+                "b7815843.fea548"
+            ]
+        ]
+    },
+    {
+        "id": "1379b423.fe8bac",
+        "type": "debug",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Channel 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 892,
+        "y": 168,
+        "wires": []
+    },
+    {
+        "id": "89e9883f.fdfaf8",
+        "type": "inject",
+        "z": "a7e826aa.2eb9f8",
+        "name": "",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 274,
+        "y": 392,
+        "wires": [
+            [
+                "eced35.f84b92c8"
+            ]
+        ]
+    },
+    {
+        "id": "eced35.f84b92c8",
+        "type": "rpi-gpio out",
+        "z": "a7e826aa.2eb9f8",
+        "name": "",
+        "pin": "21",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 512,
+        "y": 392,
+        "wires": []
+    },
+    {
+        "id": "a5707059.45333",
+        "type": "ads1x15-raspi",
+        "z": "697027fa.aa26f8",
+        "property": "payload",
+        "name": "Channel 2",
+        "chip": "IC_ADS1115",
+        "i2c_address": "ADDRESS_0x48",
+        "channel": "CHANNEL_2",
+        "progGainAmp": "PGA_4_096V",
+        "x": 350,
+        "y": 308,
+        "wires": [
+            [
+                "5506b346.90c47c"
+            ]
+        ]
+    },
+    {
+        "id": "c906eed9.6b3bb",
+        "type": "function",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Converter",
+        "func": "var ADC_Value = msg.payload\nvar ADC_Converted = (ADC_Value*10.0)+0.01111;\nvar ADC_Reading = ADC_Converted.toFixed(3)\nmsg.payload = ADC_Reading;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 696,
+        "y": 308,
+        "wires": [
+            [
+                "9d7267e2.6c2c68",
+                "62b28e89.af959"
+            ]
+        ]
+    },
+    {
+        "id": "9d7267e2.6c2c68",
+        "type": "debug",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Channel 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 892,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6339c86f.379cc8",
+        "type": "ads1x15-raspi",
+        "z": "697027fa.aa26f8",
+        "property": "payload",
+        "name": "Channel 3",
+        "chip": "IC_ADS1115",
+        "i2c_address": "ADDRESS_0x48",
+        "channel": "CHANNEL_3",
+        "progGainAmp": "PGA_4_096V",
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "c5ca5b90.f0a8c8"
+            ]
+        ]
+    },
+    {
+        "id": "7e0e1f4.4e819e",
+        "type": "function",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Converter",
+        "func": "var ADC_Value = msg.payload\nvar ADC_Converted = (ADC_Value*10.0)-0.009222;\nvar ADC_Reading = ADC_Converted.toFixed(3)\nmsg.payload = ADC_Reading;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 696,
+        "y": 420,
+        "wires": [
+            [
+                "91bae1eb.36395",
+                "c309c82c.b1def8"
+            ]
+        ]
+    },
+    {
+        "id": "91bae1eb.36395",
+        "type": "debug",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Channel 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 892,
+        "y": 392,
+        "wires": []
+    },
+    {
+        "id": "b7815843.fea548",
+        "type": "ui_gauge",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Channel 1 ",
+        "group": "38328156.61afde",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ADC Channel 1 ",
+        "label": "mA",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 892,
+        "y": 224,
+        "wires": []
+    },
+    {
+        "id": "62b28e89.af959",
+        "type": "ui_gauge",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Channel 2",
+        "group": "e440db3a.2360e8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ADC Channel 2",
+        "label": "mA",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 892,
+        "y": 336,
+        "wires": []
+    },
+    {
+        "id": "c309c82c.b1def8",
+        "type": "ui_gauge",
+        "z": "697027fa.aa26f8",
+        "name": "ADC Channel 3",
+        "group": "25d4cfb2.0cd7a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ADC Channel 3",
+        "label": "mA",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 892,
+        "y": 448,
+        "wires": []
+    },
+    {
+        "id": "396f2d32.6f07c2",
+        "type": "ui_gauge",
+        "z": "a7e826aa.2eb9f8",
+        "name": "Battery Voltage",
+        "group": "76a48de2.b98ac4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Battery Voltage",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#1311fe",
+            "#0027e6",
+            "#260ff5"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 612,
+        "y": 252,
+        "wires": []
+    },
+    {
+        "id": "af63faaa.5b6118",
+        "type": "split",
+        "z": "a7e826aa.2eb9f8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 526,
+        "y": 112,
+        "wires": [
+            [
+                "9cea6eb5.0d9eb"
+            ]
+        ]
+    },
+    {
+        "id": "5897d79d.ddfe78",
+        "type": "split",
+        "z": "697027fa.aa26f8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 526,
+        "y": 196,
+        "wires": [
+            [
+                "8553854e.2b5fb8"
+            ]
+        ]
+    },
+    {
+        "id": "5506b346.90c47c",
+        "type": "split",
+        "z": "697027fa.aa26f8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 526,
+        "y": 308,
+        "wires": [
+            [
+                "c906eed9.6b3bb"
+            ]
+        ]
+    },
+    {
+        "id": "c5ca5b90.f0a8c8",
+        "type": "split",
+        "z": "697027fa.aa26f8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 526,
+        "y": 420,
+        "wires": [
+            [
+                "7e0e1f4.4e819e"
+            ]
+        ]
+    },
+    {
+        "id": "2373d768.5b7be8",
+        "type": "delay",
+        "z": "697027fa.aa26f8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 172,
+        "y": 252,
+        "wires": [
+            [
+                "a5707059.45333"
+            ]
+        ]
+    },
+    {
+        "id": "401e3c6.6c36dc4",
+        "type": "delay",
+        "z": "697027fa.aa26f8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 172,
+        "y": 364,
+        "wires": [
+            [
+                "6339c86f.379cc8"
+            ]
+        ]
+    },
+    {
+        "id": "1445f667.5b5cfa",
+        "type": "link out",
+        "z": "697027fa.aa26f8",
+        "name": "time",
+        "links": [
+            "b952cf52.7452d"
+        ],
+        "x": 295,
+        "y": 112,
+        "wires": []
+    },
+    {
+        "id": "b952cf52.7452d",
+        "type": "link in",
+        "z": "a7e826aa.2eb9f8",
+        "name": "",
+        "links": [
+            "1445f667.5b5cfa"
+        ],
+        "x": 155,
+        "y": 112,
+        "wires": [
+            [
+                "71e511ba.73174"
+            ]
+        ]
+    },
+    {
+        "id": "71e511ba.73174",
+        "type": "delay",
+        "z": "a7e826aa.2eb9f8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 256,
+        "y": 112,
+        "wires": [
+            [
+                "b49413ec.687ea"
+            ]
+        ]
+    }
+]
